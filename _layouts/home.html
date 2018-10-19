@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <style>
+    {% include styles.html %}
+</head>
+<body>
+  <header class="nav">
+    <h1>Matt's wiki</h1>
+  </header>
+  <div class="wrapper">
+    <div class="sidebar">
+    Side bar
+    <ul>
+      <li>Item1</li>
+    </ul>
+    </div>
+    <div id="main">{{ content }}</div>
+  </div>
+</body>
+</html>
