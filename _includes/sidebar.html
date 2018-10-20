@@ -1,0 +1,10 @@
+
+<ul>
+{% for pg in site.notes %}
+  <li>
+  <a href="#{{ pg.anchor }}">
+    {{ pg.title }}
+  </a>
+  </li>
+{% endfor %}
+</ul>
