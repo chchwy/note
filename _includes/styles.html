@@ -1,14 +1,18 @@
 <style>
 * {box-sizing: border-box;}
-body {background-color:#fafafa;}
+body {background-color:#fafafa;
+font-family:-apple-system,BlinkMacSystemFont,"Open Sans","Segoe UI",Roboto,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
 body, div, h1, h2, h3 {margin:0; padding: 0;}
 div { box-sizing: border-box; }
 pre, code {font-family: Iosevka, Consolas, 'Courier New', Courier, monospace;}
 pre.highlight {background-color:#eee; padding:1em; border-left: solid 5px #999;}
 .wrapper {display:flex;}
-.nav { position:sticky; top: 0; background-color: #444; padding: 1em; height:40px;}
-.sidebar {position:sticky; top:72px; background-color: #eee; border-right: solid 1px #ccc; padding: 1em; min-width: 270px; height: calc(100vh - 5rem);}
-#main { padding: 1em 3em; }
+.nav {background-color:#444; padding: 1em;}
+.sidebar {position:sticky; top:0; background-color: #eee; border-right: solid 1px #ccc; padding: 1em; min-width: 270px; height: calc(100vh - 5rem);}
+.sidebar ul {line-height: 1.7em; }
+.sidebar a {text-decoration: none;}
+.sidebar a:hover {text-decoration: underline;}
+#main {padding: 1em 3em;}
 
 .site-name {color:#ccc;}
 .note-title {margin-top: 1em; margin-bottom:0.5em;}

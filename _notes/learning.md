@@ -1,5 +1,5 @@
 ---
-title: Learning how to learn 筆記
+title: Learning how to learn 課程筆記
 anchor: learning_how_to_learn
 ---
 
