@@ -6,14 +6,13 @@ layout: home
 title: Welcome
 ---
 
-<input type="text" placeholder="Search..">
-
 {% for pg in site.notes %}
-  <h1 id="{{ pg.anchor }}">{{ pg.title }}</h1>
-  <section class="note-content">
+  <h1 id="{{ pg.anchor }}" class="note-title">{{ pg.title }}</h1>
+  <div class="note-content">
     {{ pg.content | markdownify }}
-  </section>
-  <br>
+  </div>
+  
+  <div class="note-footer">
   <hr>
-  <br>
+  </div>
 {% endfor %}
