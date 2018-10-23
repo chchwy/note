@@ -1,5 +1,5 @@
 ---
-title: Effective C++ 
+title: Effective C++ 讀書筆記
 anchor: effective_cpp
 ---
 
@@ -16,8 +16,9 @@ C++具有四種語言典範
 
 ### Item 2:  以 const , eum, inline 取代 define
 
-這則應該不用說了，重點就是讓 preprocessor 退役，盡量使用 compiler 原生功能
-
+這則應該是常識了，原因就在於 C++ 的編譯流程中，前處理(preprocessing)和編譯(compiler)是兩個獨立的步驟。
+當前處理棄置換 #define 符號時，編譯器是完全不知情的。編譯器拿到的是置換完畢後的源碼，因此產生的錯誤訊息也比較不精確。
+所以盡可能讓前處理器(preprocessor)退役，使用原生的 compiler 功能。
 
 ### Item 3: 盡可能使用 const
 
@@ -74,7 +75,7 @@ d1 = d2; // copy!!!
 
 ### Item 11: 在 operator= 處裡自我賦值
 
-小技巧讓 operator= 不要不小心釋放掉不該放的資源
+小技巧讓 `operator=` 不要不小心釋放掉不該放的資源
 
 ### Item 12: 在複製物件時勿忘其每一個成份
 
@@ -94,16 +95,14 @@ C++是典型要求程序員手動處裡資源的語言，所以這部份也是�
 
 ### Item 14 在資源管理類裡面小心 Copying 行為
 
-why 
-
-​```cpp
-Lock m11( &m );
-Lock m12( &m11 ); // 將m11複製到m12身上
-```
-
 這樣到底會發生什麼事?
 解法一：禁止複製
 解法二：底部使用引用計數 (reference count)
+
+```
+Lock m11(&m);
+Lock m12(&m11); // 將m11複製到m12身上
+```
 
 ### Item 15 在資源管理類中提供原始資源訪問
 
@@ -118,10 +117,8 @@ Lock m12( &m11 ); // 將m11複製到m12身上
 非常罕見的case, 典型搞死自己的類型。
 ​
 ```cpp
-//宣告
-void processWidget( std::shared_ptr< Widget > pw, int priority );
-// 實際呼叫
-processWidget( new Widget, priority() );
+void processWidget(std::shared_ptr<Widget> pw, int priority); // 宣告
+processWidget(new Widget, priority());                        // 實際呼叫
 ```
 
 實際上有可能很作死，先 new 物件，然後跑 priority() 接著拋出 exception，然後 Widget 還來不及被 shared_ptr 接住，函數就離開了。
