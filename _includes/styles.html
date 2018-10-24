@@ -9,13 +9,18 @@ pre.highlight {background-color:#eee; padding:1em; border-left: solid 5px #999;}
 .wrapper {display:flex;}
 .nav {background-color:#444; padding: 1em;}
 .sidebar {position:sticky; top:0; background-color: #eee; border-right: solid 1px #ccc; padding: 1em; min-width: 270px; height: calc(100vh - 5rem);}
-.sidebar ul {line-height: 1.7em; }
-.sidebar a {text-decoration: none;}
+.sidebar ul {line-height: 1.7em;}
+.sidebar a {text-decoration: none; color:#459;}
 .sidebar a:hover {text-decoration: underline;}
 #main {padding: 1em 3em; max-width: 980px;}
 
 .site-name {color:#ccc;}
-.note-title {margin-top: 1em; margin-bottom:0.5em;}
-.note-content {padding-left: 2em; line-height: 1.5em; color:#333;}
+.note-title {margin-top: 1em; margin-bottom: 0.5em;}
+.note-content {padding-left: 2em; margin-top:1em; line-height: 1.5em; color:#333;}
 .note-footer {margin: 2em 0em;}
+
+.expand-content {max-height: 0; overflow:hidden;}
+.toggle:checked + .lbl-toggle + .expand-content {
+  max-height: 10000px;
+}
 </style>
