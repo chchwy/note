@@ -8,10 +8,8 @@ title: Welcome
 
 {% for pg in site.notes %}
 
-  <h1 id="{{ pg.anchor }}" class="note-title">{{ pg.title }}</h1>
-
   <input id="{{ pg.anchor }}-check" class="toggle" type="checkbox" checked>
-  <label for="{{ pg.anchor }}-check" class="lbl-toggle">More</label>
+  <label id="{{ pg.anchor }}"" for="{{ pg.anchor }}-check" class="toggle-label">{{ pg.title }}</label>
   <div class="expand-content">
     <div class="note-content">
     {{ pg.content | markdownify }}
