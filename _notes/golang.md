@@ -33,7 +33,8 @@ const Pi = 3.1415926  // 定義常數
 
 ## 2. Hello Golang
 
-總是要 Hello World 一下
+依照慣例要 Hello World 一下。Go 語言的語句結尾不加分號(;)
+
 ```go
 // 定義套件名
 // package "main" 說明這個檔案是程式進入點
@@ -53,16 +54,16 @@ func main() {
 ## 3. 控制結構
 
 If-else 結構
-```
-if num % 2 == 1 {  // 大括號不能放在新的一行，這是 golang 的奇耙規定
-  fmt.Printf("%d 是奇數\n", num) 
+```go
+if num % 2 == 1 {  // 花括號必須在同一行，這是 golang 的奇耙規定
+  fmt.Printf("%d 是奇數\n", num)
 } else {
   fmt.Printf("%d 是偶數\n", num)
 }
 ```
 
 For 迴圈
-```
+```go
 //  Go 語言中唯一的迴圈結構，沒有while
 sum := 0
 for i := 0; i < 10; i++ {
@@ -73,53 +74,37 @@ fmt.Println(sum)
 // 起始條件跟遞增語句可省略 (偽裝成while)
 for i < 10 {
 }
-
-// 無窮迴圈，所有全省略
-for {
-  // do something
-}
 ```
 
 Switch-case 結構
-```
+```go
 //   switch 的對象可以是整數或者字串
-//   沒有 fallthrough 規則 (跟C++/Java不同)，所以不用寫 break
+//   沒有 fallthrough 規則 (跟C++/Java不同)，不用寫 break
 var OS = "win"
 switch OS {
   case "win":
     return "It's windows"
-  case "mac", "linux":  // 同一個 case 可以有多個符合值
+  case "mac", "linux":  // case 下可以有多個值
     return "It's not windows"
 }
 ```
 ## 4. Functions
 
-```
-function fib(n)
-  if n < 2 then return 1 end
-  return fib(n - 2) + fib(n - 1)
-end
+```go
+// 典型的函數
+// 注意回傳值在函數簽名的最後
+func suqre(n float64) float64 {
+  return n * n
+}
 ```
 
 ```go
--- Closures and anonymous functions are ok:
-function adder(x)
-  -- The returned function is created when adder is
-  -- called, and remembers the value of x:
-  return function (y) return x + y end
-end
-a1 = adder(9)
-a2 = adder(36)
-print(a1(16))  --> 25
-print(a2(64))  --> 100
+// Closures and anonymous functions are ok:
+// Returns, func calls, and assignments all work
+// with lists that may be mismatched in length.
+// Unmatched receivers are nil;
+// unmatched senders are discarded.
 
--- Returns, func calls, and assignments all work
--- with lists that may be mismatched in length.
--- Unmatched receivers are nil;
--- unmatched senders are discarded.
-
-x, y, z = 1, 2, 3, 4
--- Now x = 1, y = 2, z = 3, and 4 is thrown away.
 
 function bar(a, b, c)
   print(a, b, c)
