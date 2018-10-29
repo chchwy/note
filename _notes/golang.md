@@ -3,90 +3,105 @@ title: "15分鐘學會 Golang "
 anchor: golang
 ---
 
-```
+整理了一份 Go 語言的快速入門，對象是已經有其他語言經驗的開發者。
+用最少的力氣掌握 Go 語言的大架構與潛規則
+
+```go
 // 這是單行註解
 
 /*  多行註解
     多行註解
     多行註解 */
+```
+## 1. Variables
 
-//----------------------------------------------------
-//-- 1. Variables and flow control.
-//----------------------------------------------------
+Go 語言是靜態類型語言，變數都有類型
+```go
+var x int       // 用 var 關鍵字定義新變數，類型在變數名後面
+var y int = 42  // 同上 並指定初值 42
+var z = 42      // 同上 讓編譯器推斷變數類型(int)
+w := 52         // [冒號等號] (省略var)定義新變數 並推斷類型
 
-var num int   // 宣告一個int 變數
-var num = 42  // 宣告一個變數並給初值
-num2 := 52    // 或者用 := 來讓編譯器推斷變數類型
+var s = "blueberry"   // 雙引號定義字串
+var b = false         // 定義布林
+var f float32 = 1.2   // 單精度浮點數
+var d float64 = 0.000000125 // 雙精度浮點數
+var c byte = 'c'      // unsigned 8-bit integer
 
-s = 'walternate'  -- Immutable strings like Python.
-t = "double-quotes are also fine"
-u = [[ Double brackets
-       start and end
-       multi-line strings.]]
-t = nil  -- Undefines t; Lua has garbage collection.
+const Pi = 3.1415926  // 定義常數
+```
 
--- Blocks are denoted with keywords like do/end:
-while num < 50 do
-  num = num + 1  -- No ++ or += type operators.
-end
+## 2. Hello Golang
 
--- If clauses:
-if num > 40 then
-  print('over 40')
-elseif s ~= 'walternate' then  -- ~= is not equals.
-  -- Equality check is == like Python; ok for strs.
-  io.write('not over 40\n')  -- Defaults to stdout.
-else
-  -- Variables are global by default.
-  thisIsGlobal = 5  -- Camel case is common.
+總是要 Hello World 一下
+```go
+// 定義套件名
+// package "main" 說明這個檔案是程式進入點
+package main
 
-  -- How to make a variable local:
-  local line = io.read()  -- Reads next stdin line.
+// 引入其他 package
+// fmt 用於格式化輸出 (類似C printf)
+import "fmt"
 
-  -- String concatenation uses the .. operator:
-  print('Winter is coming, ' .. line)
-end
+// main 函數，程式進入點
+func main() {
+  y := 2007
+  fmt.Printf("Hello, Golang was born in %d\n", y)
+}
+```
 
--- Undefined variables return nil.
--- This is not an error:
-foo = anUnknownVariable  -- Now foo = nil.
+## 3. 控制結構
 
-aBoolValue = false
+If-else 結構
+```
+if num % 2 == 1 {  // 大括號不能放在新的一行，這是 golang 的奇耙規定
+  fmt.Printf("%d 是奇數\n", num) 
+} else {
+  fmt.Printf("%d 是偶數\n", num)
+}
+```
 
--- Only nil and false are falsy; 0 and '' are true!
-if not aBoolValue then print('twas false') end
+For 迴圈
+```
+//  Go 語言中唯一的迴圈結構，沒有while
+sum := 0
+for i := 0; i < 10; i++ {
+  sum += i
+}
+fmt.Println(sum)
 
--- 'or' and 'and' are short-circuited.
--- This is similar to the a?b:c operator in C/js:
-ans = aBoolValue and 'yes' or 'no'  --> 'no'
+// 起始條件跟遞增語句可省略 (偽裝成while)
+for i < 10 {
+}
 
-karlSum = 0
-for i = 1, 100 do  -- The range includes both ends.
-  karlSum = karlSum + i
-end
+// 無窮迴圈，所有全省略
+for {
+  // do something
+}
+```
 
--- Use "100, 1, -1" as the range to count down:
-fredSum = 0
-for j = 100, 1, -1 do fredSum = fredSum + j end
+Switch-case 結構
+```
+//   switch 的對象可以是整數或者字串
+//   沒有 fallthrough 規則 (跟C++/Java不同)，所以不用寫 break
+var OS = "win"
+switch OS {
+  case "win":
+    return "It's windows"
+  case "mac", "linux":  // 同一個 case 可以有多個符合值
+    return "It's not windows"
+}
+```
+## 4. Functions
 
--- In general, the range is begin, end[, step].
-
--- Another loop construct:
-repeat
-  print('the way of the future')
-  num = num - 1
-until num == 0
-
-
-----------------------------------------------------
--- 2. Functions.
-----------------------------------------------------
-
+```
 function fib(n)
   if n < 2 then return 1 end
   return fib(n - 2) + fib(n - 1)
 end
+```
 
+```go
 -- Closures and anonymous functions are ok:
 function adder(x)
   -- The returned function is created when adder is
