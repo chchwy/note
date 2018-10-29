@@ -6,6 +6,8 @@ anchor: golang
 整理了一份 Go 語言的快速入門，對象是已經有其他語言經驗的開發者。
 用最少的力氣掌握 Go 語言的大架構與潛規則
 
+https://yami.io/php-to-golang/
+
 ```go
 // 這是單行註解
 
