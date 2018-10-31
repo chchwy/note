@@ -32,18 +32,17 @@ var c byte = 'c'      // unsigned 8-bit integer
 
 const Pi = 3.1415926  // 定義常數
 ```
+如果沒有給變數初值，預設值是 0, false 或者 "" 空字串。
 
 ## 2. Hello Golang
 
 依照慣例要 Hello World 一下。Go 語言的語句結尾不加分號(;)
 
 ```go
-// 定義套件名
-// package "main" 說明這個檔案是程式進入點
+// 定義套件名: package "main" 說明這個檔案是程式進入點
 package main
 
-// 引入其他 package
-// fmt 用於格式化輸出 (類似C printf)
+// 引入其他 package: fmt 用於格式化輸出 (類似C printf)
 import "fmt"
 
 // main 函數，程式進入點
@@ -66,22 +65,22 @@ if num % 2 == 1 {  // 花括號必須在同一行，這是 golang 的奇耙規�
 
 For 迴圈
 ```go
-//  Go 語言中唯一的迴圈結構，沒有while
+// for-loop 是 Go 語言唯一的迴圈結構，沒有while
 sum := 0
 for i := 0; i < 10; i++ {
   sum += i
 }
 fmt.Println(sum)
 
-// 起始條件跟遞增語句可省略 (偽裝成while)
+// 可省略起始條件跟遞增語句 (for 偽裝成 while)
 for i < 10 {
 }
 ```
 
 Switch-case 結構
 ```go
-//   switch 的對象可以是整數或者字串
-//   沒有 fallthrough 規則 (跟C++/Java不同)，不用寫 break
+// switch 的對象可以是整數或者字串
+// 沒有 fallthrough 規則 (跟C++/Java不同)，不用寫 break
 var OS = "win"
 switch OS {
   case "win":
@@ -93,25 +92,25 @@ switch OS {
 ## 4. Functions
 
 ```go
-// 典型的函數
-// 注意回傳值在函數簽名的最後
+// 典型的 Go 函數
+// 注意: 回傳類型在函數簽名的最後
 func suqre(n float64) float64 {
   return n * n
+}
+
+// 回傳多個變數 (下例回傳兩個字串)
+func swap(s1 string, s2 string) (string, string) {
+  return s2, s1
+}
+
+// 同時指定回傳變數名跟回傳類型
+func add(x int, y int) (sum int) {
+  sum := x + y
+  return // 省略 return 語句
 }
 ```
 
 ```go
-// Closures and anonymous functions are ok:
-// Returns, func calls, and assignments all work
-// with lists that may be mismatched in length.
-// Unmatched receivers are nil;
-// unmatched senders are discarded.
-
-
-function bar(a, b, c)
-  print(a, b, c)
-  return 4, 8, 15, 16, 23, 42
-end
 
 x, y = bar('zaphod')  --> prints "zaphod  nil nil"
 -- Now x = 4, y = 8, values 15..42 are discarded.
