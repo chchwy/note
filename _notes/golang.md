@@ -32,17 +32,19 @@ var c byte = 'c'      // unsigned 8-bit integer
 
 const Pi = 3.1415926  // 定義常數
 ```
-如果沒有給變數初值，預設值是 0, false 或者 "" 空字串。
+!! 如果沒有給變數初值，預設值將會是 0, false 或者 "" 空字串三者之一。
 
 ## 2. Hello Golang
 
-依照慣例要 Hello World 一下。Go 語言的語句結尾不加分號(;)
+依照慣例要 Hello World 一下。
+要注意 Go 語言的語句結尾不加分號(;)
 
 ```go
-// 定義套件名: package "main" 說明這個檔案是程式進入點
+// 首先要定義套件名
+// package "main" 意味這個檔案包含程式進入點 main
 package main
 
-// 引入其他 package: fmt 用於格式化輸出 (類似C printf)
+// 接著引入其他 package: fmt 用於格式化輸出 (類似C printf)
 import "fmt"
 
 // main 函數，程式進入點
@@ -65,14 +67,14 @@ if num % 2 == 1 {  // 花括號必須在同一行，這是 golang 的奇耙規�
 
 For 迴圈
 ```go
-// for-loop 是 Go 語言唯一的迴圈結構，沒有while
+// for 迴圈是 Go 語言中唯一的迴圈結構 (沒有while)
 sum := 0
 for i := 0; i < 10; i++ {
   sum += i
 }
 fmt.Println(sum)
 
-// 可省略起始條件跟遞增語句 (for 偽裝成 while)
+// 但是 for 可省略起始條件跟遞增語句 (這樣 for 就偽裝成 while 了)
 for i < 10 {
 }
 ```
@@ -80,7 +82,7 @@ for i < 10 {
 Switch-case 結構
 ```go
 // switch 的對象可以是整數或者字串
-// 沒有 fallthrough 規則 (跟C++/Java不同)，不用寫 break
+// 預設沒有 fallthrough 規則 (跟C++/Java不同)，所以不用寫 break
 var OS = "win"
 switch OS {
   case "win":
@@ -92,44 +94,42 @@ switch OS {
 ## 4. Functions
 
 ```go
-// 典型的 Go 函數
-// 注意: 回傳類型在函數簽名的最後
+// Go 的函數和其他語言相比，並沒有太特別
+// 唯一需要注意的地方是回傳值類型放在最後
 func suqre(n float64) float64 {
   return n * n
 }
 
-// 回傳多個變數 (下例回傳兩個字串)
+// 可回傳多個變數 (比如回傳兩個字串來實現swap)
 func swap(s1 string, s2 string) (string, string) {
   return s2, s1
 }
 
-// 同時指定回傳變數名跟回傳類型
-func add(x int, y int) (sum int) {
+// 回傳值還可以直接寫變數名稱
+func add(x int, y int) (sum int) { // 我要回傳 sum 這個變數
   sum := x + y
-  return // 省略 return 語句
+  return // 因為已經知道回傳 sum 了，return 後可省略
 }
 ```
 
+函數是一級物件，可以保存在變數裡，或作為參數傳遞。
 ```go
+add := func(x, y int) int {
+  return x + y
+}
 
-x, y = bar('zaphod')  --> prints "zaphod  nil nil"
--- Now x = 4, y = 8, values 15..42 are discarded.
+mul := func(x, y int) int {
+  return x * y
+}
 
--- Functions are first-class, may be local/global.
--- These are the same:
-function f(x) return x * x end
-f = function (x) return x * x end
+// 這個函數的第三個參數，就是另一個函數
+func do_math(a int, b int, op func(int, int) int) int {
+  return op(a, b)
+}
 
--- And so are these:
-local function g(x) return math.sin(x) end
-local g; g  = function (x) return math.sin(x) end
--- the 'local g' decl makes g-self-references ok.
-
--- Trig funcs work in radians, by the way.
-
--- Calls with one string param don't need parens:
-print 'hello'  -- Works fine.
-
+fmt.Println(do_math(1, 5, add)) // 印出 6 (從 1 + 5 計算出來)
+fmt.Println(do_math(9, 9, mul)) // 印出 81 (從 9 * 9 計算出來)
+```
 
 ----------------------------------------------------
 -- 3. Tables.
