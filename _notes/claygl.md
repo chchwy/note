@@ -1,9 +1,11 @@
 ---
-title: "ClayGL 筆記"
+title: ClayGL 筆記
 anchor: claygl
 ---
 
-`fbx2gltf.py` 使用方法
+<https://github.com/pissang/claygl>
+
+## `fbx2gltf.py` 使用方法
 
 ### 安裝 Fbx python 
 

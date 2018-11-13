@@ -5,7 +5,7 @@ anchor: bgfx
 
 ## Bgfx on Windows
 
-WIP..
+`appveyor.yml` 可看編譯流程
 
 ## Bgfx to asm.js
 
