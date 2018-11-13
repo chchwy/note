@@ -56,14 +56,7 @@ func main() {
 
 ## 3. 控制結構
 
-If-else 結構
-```go
-if num % 2 == 1 {  // 花括號必須在同一行，這是 golang 的奇耙規定
-  fmt.Printf("%d 是奇數\n", num)
-} else {
-  fmt.Printf("%d 是偶數\n", num)
-}
-```
+記住，花括號必須在同一行，這是 golang 的奇耙規定
 
 For 迴圈
 ```go
@@ -91,6 +84,16 @@ switch OS {
     return "It's not windows"
 }
 ```
+
+If-else 結構
+```go
+if num % 2 == 1 {  // 
+  fmt.Printf("%d 是奇數\n", num)
+} else {
+  fmt.Printf("%d 是偶數\n", num)
+}
+```
+
 ## 4. Functions
 
 ```go
