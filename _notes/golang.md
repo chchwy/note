@@ -3,6 +3,8 @@ title: "15分鐘學會 Golang "
 anchor: golang
 ---
 
+<https://devhints.io/go>
+
 Go 語言的快速入門，對象是已經有其他語言經驗的開發者。
 快速掌握 Go 語言的大方向與潛規則
 
