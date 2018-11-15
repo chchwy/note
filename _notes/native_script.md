@@ -13,4 +13,4 @@ anchor: native-script
 
 啟動 app
 
-    tns run ios
+    tns run ios --bundle
