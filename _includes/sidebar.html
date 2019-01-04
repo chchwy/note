@@ -2,7 +2,7 @@
 <ul>
 {% for pg in site.notes %}
   <li>
-  <a href="#{{ pg.anchor }}">
+  <a href="#{{ pg.anchor }}" onclick="return sidebar_click('{{ pg.anchor }}')">
     {{ pg.title }}
   </a>
   </li>

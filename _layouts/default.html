@@ -8,6 +8,7 @@
 <body>
   <header class="nav">
     <h1 class="site-name">Matt's wiki</h1>
+    <button onclick="toggle_expand_collapse_all()">Expand/Collapse All</button>
   </header>
   <div class="wrapper">
     <div class="sidebar">
@@ -15,5 +16,7 @@
     </div>
     <div id="main">{{ content }}</div>
   </div>
+
+  {% include myjs.html %}
 </body>
 </html>

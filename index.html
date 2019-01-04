@@ -5,7 +5,7 @@ title: Welcome
 
 {% for pg in site.notes %}
 
-  <input id="{{ pg.anchor }}-check" class="toggle" type="checkbox" checked>
+  <input id="{{ pg.anchor }}-check" class="toggle" type="checkbox" checked onclick="title_clicked(this);">
   <label id="{{ pg.anchor }}" for="{{ pg.anchor }}-check" class="toggle-label">{{ pg.title }}</label>
   <div class="expand-content">
     <div class="note-content">
