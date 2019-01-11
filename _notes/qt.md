@@ -142,3 +142,22 @@ http://blog.sina.com.cn/s/blog_3e62c50d01013xd4.html
 
 1. lupdate
 2. lrelease
+
+### TLS initialization failed 
+
+    qt.network.ssl: QSslSocket::connectToHostEncrypted: TLS initialization failed
+
+First, check the OpenSSL version your Qt built with
+
+    qDebug() << "ssl:" << QSslSocket::sslLibraryBuildVersionString();
+
+Download the corresponding version of OpenSSL
+
+<http://slproweb.com/products/Win32OpenSSL.html>
+
+Copy the DLL files to your exe folder (or system32)
+
+Qt source code for loading OpenSSL dlls
+
+<https://code.woboq.org/qt5/qtbase/src/network/ssl/qsslsocket_openssl_symbols.cpp.html>
+
