@@ -161,3 +161,9 @@ Qt source code for loading OpenSSL dlls
 
 <https://code.woboq.org/qt5/qtbase/src/network/ssl/qsslsocket_openssl_symbols.cpp.html>
 
+
+### QTreeView 
+
+Simple Tree Model Example:
+
+<https://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html>
