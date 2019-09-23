@@ -21,3 +21,18 @@ C:\Python33\
 
     py -2 your_script.py aurguments
 
+## File IO
+
+```
+# open and write 
+f = open("demofile2.txt", "w")
+f.write("Now the file has more content!")
+f.close()
+```
+
+```
+# open and read the file:
+f = open("demofile2.txt", "r")
+print(f.read())
+```
+
