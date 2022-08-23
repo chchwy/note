@@ -1,5 +1,5 @@
 ---
-title: CSS 技巧
+title: CSS
 anchor: css-trick
 ---
 

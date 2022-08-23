@@ -1,5 +1,5 @@
 ---
-title: "Godot Engine "
+title: "Godot"
 anchor: godot
 feed: show
 ---
