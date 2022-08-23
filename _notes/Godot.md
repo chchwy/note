@@ -1,7 +1,6 @@
 ---
-title: "Godot"
-anchor: godot
 feed: show
 ---
 
-Godot Official Website: <https://godotengine.org/>
+- Godot Official Website: <https://godotengine.org/>
+- [[How to compile Godot]]

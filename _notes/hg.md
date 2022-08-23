@@ -1,17 +1,15 @@
 ---
 title: Mercurial (hg) 使用指南
-anchor: hg-guide
 feed: show
 ---
 
 Mercurial (hg) 是一個比較小眾的版本管理系統。
-Firefox 跟 Ogre3D 都還在使用 hg。
 
 這裡備忘一些簡單的 hg 操作指令
 
 克隆遠端倉庫
 
-```
+```shell
 hg clone https://the-repo-url
 ```
 
