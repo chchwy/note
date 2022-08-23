@@ -1,5 +1,7 @@
 # ARAM 帝王特朗德
 
+#ARAM #LOL
+
 ## 起手
 號角+仙女護符
 
@@ -24,5 +26,3 @@ W開起來 用E去干擾對方輸出進場輸出
 更進階一點的特朗德可以用E打斷部分位移技能及中斷施法動作
 
 Source: https://forum.gamer.com.tw/Co.php?bsn=17532&sn=5829669
-
-#ARAM #LOL

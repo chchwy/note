@@ -1,4 +1,6 @@
-# C++ Benchmarking
+# [[C++]] Benchmarking
+
+#Cpp #Benchmark #CodeSnippet
 
 C++11 測量程式執行時間的方法
 ```cpp
@@ -16,5 +18,3 @@ auto ms_int = duration_cast<microseconds>(t2 - t1);
 
 cout << "The task takes" << ms_int.count();
 ```
-
-#Cpp #Benchmark #CodeSnippet

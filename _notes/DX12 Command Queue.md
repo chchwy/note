@@ -1,3 +1,7 @@
+---
+feed: show
+---
+
 # GPU Command Queue
 
 連結CPU/GPU的命令通道

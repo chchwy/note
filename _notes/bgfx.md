@@ -1,6 +1,5 @@
 ---
-title: BGFX 使用筆記
-anchor: bgfx
+title: BGFX
 ---
 
 ## Bgfx on Windows
