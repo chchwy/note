@@ -1,6 +1,7 @@
 ---
 title: Mercurial (hg) 使用指南
 anchor: hg-guide
+feed: show
 ---
 
 Mercurial (hg) 是一個比較小眾的版本管理系統。

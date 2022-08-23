@@ -1,6 +1,7 @@
 ---
 title: Effective C++ 讀書筆記
 anchor: effective_cpp
+feed: show
 ---
 
 ### Item 1:  視C++為語言聯邦

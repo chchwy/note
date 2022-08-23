@@ -1,8 +1,9 @@
 ---
 title: C++ 筆記
 anchor: cpp
+date: 01-01-2021
+feed: show
+format: list
 ---
 
-## C++ 模板教程
-
-<https://github.com/wuye9036/CppTemplateTutorial>
+-  C++ Template <https://github.com/wuye9036/CppTemplateTutorial>

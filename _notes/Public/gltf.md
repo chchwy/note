@@ -1,6 +1,7 @@
 ---
-title: glTF 格式
+title: glTF
 anchor: gltf_3d
+feed: show
 ---
 
 ### glTF Overview
