@@ -4,7 +4,7 @@ anchor: effective_cpp
 feed: show
 ---
 
-### Item 1:  視C++為語言聯邦
+### Item 1:  視 [[Cpp|C++]]為語言聯邦
 
 一些自己的重點筆記，條款 1~4 試圖傳達一些C++常識：
 

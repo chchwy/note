@@ -1,5 +1,5 @@
 ---
-title: "15分鐘學會 Golang "
+title: "15分鐘學會 Golang"
 anchor: golang
 feed: show
 ---

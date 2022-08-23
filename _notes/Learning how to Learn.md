@@ -1,6 +1,5 @@
 ---
 title: Learning how to learn 課程
-anchor: learning_how_to_learn
 date : 01-01-2021
 feed: show
 ---

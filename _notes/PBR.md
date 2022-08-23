@@ -5,6 +5,7 @@ date : 01-01-2021
 feed: show
 ---
 
+[[3D]]
 
 PBR 是一種新的光照模型，相較於舊的 Phone model，PBR 可以更精準的處理光線的反射和流動。
 

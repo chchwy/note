@@ -1,9 +1,8 @@
 ---
 title: "iOS 筆記"
-anchor: ios
 ---
 
-## iOS Webview interaction
+## iOS Webview Interactions
 
 Set Message Handler
 

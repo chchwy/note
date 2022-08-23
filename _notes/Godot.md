@@ -15,7 +15,7 @@ pip install scons
 ```
 
 編譯指令：
-```
+```shell
 scons p=windows tools=no target=release_debug -j 8
 ```
  - p=(平台)
@@ -24,7 +24,7 @@ scons p=windows tools=no target=release_debug -j 8
  - j=(平行編譯數目)
 
 產生 Visual Studio 專案
-```
+```shell
 scons platform=windows vsproj=yes -j 8
 ```
 
