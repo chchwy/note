@@ -1,6 +1,7 @@
 ---
 title: Learning how to learn 課程筆記
 anchor: learning_how_to_learn
+date : 01-01-2021
 ---
 
 - 類比(Metaphor) 提供了一種非常有效的學習方式
