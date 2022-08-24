@@ -4,7 +4,7 @@ feed: show
 
 # GPU Command Queue
 
-連結CPU/GPU的命令通道
+[[DX12]] 連結CPU/GPU的命令通道
 
 We must know that with graphics programming we have two processors at work: CPU and GPU.
 
