@@ -1,10 +1,8 @@
-# GPU work submission
-
 #GPU #DX12
 
-早年驅動 GPU 畫圖的方法相當單純，設定好渲染管線參數，呼叫 `Draw()`，GPU 就會把東西畫出來。在 [[DirectX 12]] 等低階 API 出現後，事情變得有一點複雜。
+早年驅動 GPU 畫圖的方法相當單純，設定好渲染管線參數，呼叫 `Draw()`，GPU 就會把東西畫出來。在 [[DX12]] 等低階 API 出現後，事情變得有一點複雜。
 
-如果從 DX11 來看，首先是 DeviceContext 物件消失了，原本 DeviceContext 負責的工作，切割成數塊，由數個不同物件各自承擔下來。
+如果從 [[DX11]] 來看，首先是 DeviceContext 物件消失了，原本 DeviceContext 負責的工作，切割成數塊，由數個不同物件各自承擔下來。
 
 ### Command Queue：CPU/GPU 溝通的管道
 

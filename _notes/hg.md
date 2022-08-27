@@ -1,5 +1,5 @@
 ---
-title: Mercurial (hg) 使用指南
+title: Hg
 feed: show
 ---
 

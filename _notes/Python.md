@@ -1,8 +1,6 @@
 ---
 title: "Python 筆記"
-anchor: python-note
-date : 01-01-2021
-feed: show
+feed: hide
 ---
 
 ## Python 2/3 切換

@@ -1,4 +1,6 @@
-# GTD 五步驟
+#GTD #標準化 
+
+Source: https://x-team.com/blog/a-system-to-capture-and-retain-knowledge/
 
 GTD 是「無所不包」的生活事務處理架構，用「統一流程」來處理生活中一切的事情。
 
@@ -20,6 +22,3 @@ GTD 的五個步驟
 4. Reflect: review your folders and lists frequently.
 5. Engage: do what's actionable based on context, time, energy, priority.
 
-#GTD #標準化 
-
-Source: https://x-team.com/blog/a-system-to-capture-and-retain-knowledge/

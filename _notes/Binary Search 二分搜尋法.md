@@ -2,8 +2,7 @@
 aliases: [二分搜尋法, Binary Search]
 ---
 
-# Binary Search
-#Algo, #Cpp , #CodeNnipped
+#Algo #Cpp #CodeSnippet 
 
 Time Complexity: Big-O(logN)
 

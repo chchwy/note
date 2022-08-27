@@ -1,4 +1,4 @@
-# Compute Queue
+#GPU #DX12 
 
 通常 CPU 傳送給 GPU 的指令，都會透過第一條 Command Queue 。也叫做 3D Queue / Direct Queue / Graphics Queue。可以調動所有的 GPU 硬體資源。
 
@@ -13,7 +13,6 @@ Compute Queue 不能處理以下種類的 resource barriers
 - Render Target View
 - Pixel Shader Resource
 
-#GPU #DX12 
 
 
 References:

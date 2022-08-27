@@ -1,5 +1,4 @@
 #DX12 #DXGI 
-
 Source: [[Book-Introduction to Game Programming With DirectX 12]] Ch 4.1
 
 DXGI Display Adapter 係一個實現了渲染功能的硬體，那個硬體有 99% 的機率名叫「顯示卡」。除了顯示卡之外，也有軟體模擬的 software adapter (Windows 8 之後)。

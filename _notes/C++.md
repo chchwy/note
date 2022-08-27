@@ -1,8 +1,4 @@
----
-date: 01-01-2021
-feed: show
-format: list
----
+Hello, I am a C++ programmer.
 
 - [C++ Template Tutorial](https://github.com/wuye9036/CppTemplateTutorial)
-- [[Effective-Cpp|Effective C++ 3rd 讀書筆記]]
+- [[Effective C++ 3rd 讀書筆記]]

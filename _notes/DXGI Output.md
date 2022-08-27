@@ -1,3 +1,7 @@
+#DX12 #DXGI
+Source: [[Book-Introduction to Game Programming With DirectX 12]] Cht 4.1.10
+
+
 每個 [[DXGI Adapter]] 之下，都會有一個或多個 Display Output (物件型態為 `IDXGIOutput` )，那個東西通常叫做螢幕。
 
 如果一張顯卡 (Adapter) 接了兩個螢幕，那麼就會有兩個 Outputs
@@ -27,10 +31,3 @@ void D3DApp::LogAdapterOutputs(IDXGIAdapter* adapter)
   } 
 }
 ```
-
-Source: [[Book-Introduction to Game Programming With DirectX 12]] Cht 4.1.10
-
-#DX12 #DXGI
-
-Links:
-- [[DXGI Adapter]]

@@ -1,4 +1,4 @@
-# Two Pointers
+#Algo 
 
 快慢指針，是一種操作陣列/鏈結串列的手法。
 
@@ -21,6 +21,3 @@ for i to N
     if elem[i] == elem[j]
       remove elem[j]
 ```
-
-
-#Algo 

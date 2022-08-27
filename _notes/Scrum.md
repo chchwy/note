@@ -1,8 +1,8 @@
-# Scrum
-
 #Scrum #軟體工程 #Agile
+Source: [Scrum 指南繁體中文版](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Chinese-Traditional.pdf)
 
 Scrum 是一種 Agile 敏捷的實現框架 。制訂了一系列的規則，讓人可以遵守並且實現敏捷開發。
+
 
 Scrum 分成三大部分
 
@@ -24,4 +24,3 @@ Scrum 分成三大部分
 - Sprint Backlog
 - Increment
 
-參考: [Scrum 指南繁體中文版](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Chinese-Traditional.pdf)

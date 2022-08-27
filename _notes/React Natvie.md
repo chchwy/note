@@ -1,6 +1,5 @@
 ---
 title: "React Native 筆記"
-anchor: react-native
 date : 01-01-2021
 ---
 

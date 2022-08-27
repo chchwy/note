@@ -1,5 +1,4 @@
-# GPU Performance Tuning
-
+#GPU #Shader #Benchmark 
 Source: https://developer.apple.com/documentation/metal/performance_tuning
 
 這是從蘋果的 Metal 文件摘錄出來的，幾個優化 GPU 效能的下刀處：
@@ -14,4 +13,3 @@ Source: https://developer.apple.com/documentation/metal/performance_tuning
 
 3. Measuring the GPU's Use of Memory Bandwidth
 
-#GPU #Optimization #Metal #Shader #Benchmark 

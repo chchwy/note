@@ -1,7 +1,6 @@
 ---
+title: 'How to compile Godot'
 ---
-
-## How to compile Godot
 
 [[Godot]] 用的建構工具是 Scons。安裝 Scons:
 

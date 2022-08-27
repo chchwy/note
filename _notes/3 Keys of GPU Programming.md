@@ -1,5 +1,5 @@
-# 3 key components of GPU Programming
-#GPU
+#GPU #Shader 
+Source: [[Ray Tracing Gems]] Ch 3.2
 
 GPU programming has 3 key components
 
@@ -7,4 +7,3 @@ GPU programming has 3 key components
 2. the CPU host side setup process
 3. the data sharing between host and device
 
-Source: [[Ray Tracing Gems]] Ch 3.2

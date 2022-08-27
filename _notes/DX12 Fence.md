@@ -1,10 +1,6 @@
----
-feed: show
----
-
-# ID3D12Fence
-
 #DX12 
+
+ID3D12Fence
 
 [[DX12]] Fence is a way to synchronize the work between CPU and GPU.
 

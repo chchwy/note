@@ -1,5 +1,4 @@
-# PBR in Filament
-
+#PBR #3D
 [[PBR]] = Physically-based Rendering 的簡稱。
 
 相較傳統的實時渲染模型，PBR 可以更準確的表現物體表面的材質以前跟光線互動的行為。
@@ -39,7 +38,5 @@ microfacet BRDF 微平面 BRDF
 good practical plausible 可行的 BRDF 模型
 
 在微觀視野，平面都是由非常微小的凹凸不平的平面組成的。
-
-
 
 D term:

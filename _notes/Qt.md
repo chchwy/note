@@ -1,7 +1,5 @@
 ---
 title: Qt
-anchor: qt
-date : 01-01-2021
 feed: show
 ---
 

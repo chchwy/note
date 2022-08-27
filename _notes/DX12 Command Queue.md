@@ -1,8 +1,4 @@
----
-feed: show
----
-
-# GPU Command Queue
+#DX12 #GPU 
 
 [[DX12]] 連結CPU/GPU的命令通道
 
@@ -22,6 +18,3 @@ Command Queue 可已有三種類型:
 3. Copy Queue
 
 由上到下，上面權力最大，下面權力最小。
-
-
-#DX12 #GPU 
