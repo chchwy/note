@@ -1,3 +1,5 @@
+---
+---
 #DX12 #DXGI
 Source: [[Book-Introduction to Game Programming With DirectX 12]] Cht 4.1.10
 

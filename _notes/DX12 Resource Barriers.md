@@ -1,3 +1,5 @@
+---
+---
 #DX12 #TODO 
 
 在 [[DX12]] 裡，Resource Barrier 是用來提示 GPU 資源使用的方式要改變了。
