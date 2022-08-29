@@ -1,7 +1,8 @@
 #Cpp #Benchmark #CodeSnippet
 [[C++]] Benchmarking
 
-[[C++11]] 測量程式執行時間的方法
+C++11 測量程式執行時間的方法
+
 ```cpp
 using std::chrono::high_resolution_clock;  
 using std::chrono::duration_cast;  
